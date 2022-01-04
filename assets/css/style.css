@@ -88,10 +88,14 @@ Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
 Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
 */
 
+body {
+  overflow: hidden;
+}
+
 main section {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 23.5% 0 0 0;
+  margin: 24% 0 0 0;
 }
 
 main section article {
@@ -99,6 +103,7 @@ main section article {
   flex-direction: column;
   width: 327px;
   margin: 0 auto;
+  padding: 0 0 15% 0;
 }
 
 article img {
@@ -109,17 +114,17 @@ article img {
 article:nth-of-type(1) {
   background: hsl(31, 77%, 52%);
   border-radius: 7px 7px 0 0;
-  padding: 0 0 13% 0;
+
 }
 
 article:nth-of-type(2) {
   background: hsl(184, 100%, 22%);
-  padding: 0 0 13% 0;
+
 }
 
 article:nth-of-type(3) {
   background: hsl(179, 100%, 13%);
-  padding: 0 0 13% 0;
+
 }
 
 button {
@@ -158,4 +163,55 @@ p {
   font-size: 2.22vh;
   color: hsla(0, 0%, 100%, 0.75);
   line-height: 3.8vh;
+}
+
+
+@media only screen and (max-width: 1440px) {
+  main section {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5% 18.4% 0;
+  }
+
+  article:nth-of-type(1) {
+    border-radius: 7px 0 0 7px;
+    padding: 0 0 0% 0;
+  }
+
+  article:nth-of-type(3) {
+    padding: 0 0 13% 0;
+    border-radius: 0 7px 7px 0;
+  }
+
+  main section article {
+    width: 305px;
+    margin: 32% auto 0;
+  }
+
+  article img {
+    width: 65px;
+    margin: 16% 0 9% 15.5%;
+  }
+
+  h1 {
+    font-size: 5vh;
+    margin: 1% 0 0 16%;
+  }
+
+  p {
+    margin: 7.2% 17% 0 15.5%;
+    font-size: 1.8vh;
+    line-height: 3.3vh;
+    letter-spacing: .5px;
+  }
+
+  button {
+    width: 145px;
+    border-radius: 100px;
+    border: none;
+    background: white;
+    padding: 4% 0%;
+    margin: 27% 0 0 16%;
+    font-family: Lexend Deca;
+    font-size: 2vh;
+  }
 }
