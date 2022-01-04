@@ -171,6 +171,7 @@ p {
   main section {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 5% 18.4% 0;
+    padding: 0% 0 10% 0;
   }
 
   article:nth-of-type(1) {
@@ -214,5 +215,9 @@ p {
     margin: 27% 0 0 16%;
     font-family: Lexend Deca;
     font-size: 2vh;
+  }
+
+  body {
+    overflow: hidden;
   }
 }
